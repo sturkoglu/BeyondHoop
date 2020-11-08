@@ -1,4 +1,8 @@
-@()
-@layouts.html.default("Scalatra: a tiny, Sinatra-like web framework for Scala", "Welcome to Scalatra"){
-  <p>Hello, Twirl!</p>
+@(topics: Seq[(Int,String, String, Int, String, Int)])
+@layouts.html.default("Scalatra: a tiny, Sinatra-like web framework for Scala", "Welcome to BeyondHoop"){
+  <p>Hello, World!</p>
+  <p>Here is what are the trending topics on Meetup for you today:</p>
+  @for(topic <- topics){
+    <b>@topic._2</b> with @topic._6 members<br>
+  }
 }
