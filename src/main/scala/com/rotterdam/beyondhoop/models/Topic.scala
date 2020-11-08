@@ -24,6 +24,8 @@ class TopicRecord(tag: Tag) extends
 }
 
 /*
+docker run -v beyond_postgres_volume:/var/lib/postgresql/data --name volume-postgres -p 5433:5432 -d bsio/postgres:version1
+
 CREATE DATABASE beyond_meetup
 
 CREATE TABLE topic
